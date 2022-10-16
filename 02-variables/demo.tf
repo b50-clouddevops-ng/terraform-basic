@@ -27,7 +27,7 @@ output "introduction-op1" {
     
 }
 
-variablr ex-map {
+variable ex-map {
     default = {
         Name = "Nimmi"
         address = "Westford"
