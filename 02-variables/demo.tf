@@ -20,7 +20,7 @@ variable "ex-list" {
 
 
 output "ex-list" {
-    value = "My name is  ${var.introduction[0]} and living in  ${var.introduction[1]} and house number is  ${var.introduction[2]}"
+    value = "My name is  ${var.ex-list[0]} and living in  ${var.ex-list[1]} and house number is  ${var.ex-list[2]}"
     
 }
 
