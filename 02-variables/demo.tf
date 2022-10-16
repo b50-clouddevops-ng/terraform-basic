@@ -1,4 +1,4 @@
-variable  "sample" {
+/* variable  "sample" {
     default = "Hello world from variable example"
 }
 
@@ -28,3 +28,4 @@ output "introduction-op1" {
 }
 
 
+ */
