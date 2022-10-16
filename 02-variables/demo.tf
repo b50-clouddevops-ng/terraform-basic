@@ -34,6 +34,6 @@ variable ex-map {
 
 #How to print the map varibale
 output ex-map {
-    value = "My name is ${var.ex-map["Name"]}"
+    value = "My name is ${var.ex-map["Name"]} and my address is ${var.ex-map["address"]} and my house number is ${var.ex-map["number"]}"
 }
 
