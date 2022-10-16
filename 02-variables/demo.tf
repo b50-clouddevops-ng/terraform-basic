@@ -12,8 +12,8 @@ output "sample-op2" {
 
 variable "introduction" {
     default = {
-        "Nimmi"
-        "Westford"
+        "Nimmi",
+        "Westford",
         26
     }
     
