@@ -18,16 +18,17 @@ variable "ex-list" {
     ] 
 }
 
-
+#Print the list example
 output "ex-list" {
     value = "My name is  ${var.ex-list[0]} and living in  ${var.ex-list[1]} and house number is  ${var.ex-list[2]}"
     
 }
 
+#Declare the variable map
 variable ex-map {
     default = {
         Name = "Nimmi"
-        address = "Westford"
+        address = "Boston"
         number = 26
     }
 }
