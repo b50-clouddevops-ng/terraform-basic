@@ -1,4 +1,4 @@
-/* variable  "sample" {
+variable  "sample" {
     default = "Hello world from variable example"
 }
 
@@ -19,7 +19,7 @@ variable "intro-person" {
 }
 
 output "introduction-op" {
-    value = "My name is ${var.introduction}"
+    value = "My name is ${var.introduction[0]}"
 }
 
 output "introduction-op1" {
@@ -28,4 +28,3 @@ output "introduction-op1" {
 }
 
 
- */
