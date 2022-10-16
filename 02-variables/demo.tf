@@ -9,3 +9,13 @@ output "sample-op"{
 output "sample-op2" {
     value = "value of sample is ${var.sample}"
 }
+
+variable "introduction" {
+    name = "Nimmi"
+}
+
+output "introduction-op" {
+    value = "My name is ${var.introduction}"
+}
+
+
