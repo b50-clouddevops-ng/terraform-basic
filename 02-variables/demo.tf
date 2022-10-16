@@ -1,5 +1,5 @@
 variable  "sample" {
-    define = "Hello world from variable example"
+    default = "Hello world from variable example"
 }
 
 output "sample-op"{
