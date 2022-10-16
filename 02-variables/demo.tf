@@ -45,7 +45,7 @@ output city {
     value = "My city name is ${var.City}"
 }
 
-variable state {}
+variable State {}
 output state {
-    value = var.state
+    value = var.State
 }
