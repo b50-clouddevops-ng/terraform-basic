@@ -23,7 +23,8 @@ output "introduction-op" {
 }
 
 output "introduction-op1" {
-    value = "My name is  ${var.introduction[0]} and living in  ${var.introduction[1]} and house number is  ${var.introduction[2]}}"
+    #value = "My name is  ${var.introduction[0]} and living in  ${var.introduction[1]} and house number is  ${var.introduction[2]}}"
+    value = "My name is ${var.introduction}"
 }
 
 
