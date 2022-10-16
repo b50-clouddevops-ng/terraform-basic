@@ -1,4 +1,4 @@
-output "print hello"{
+output "sample"{
     value = "Hello world" 
 
 }
