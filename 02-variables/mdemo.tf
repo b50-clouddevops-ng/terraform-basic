@@ -9,6 +9,9 @@ variable "ex-list" {
         "Verma" 
     ]
 }
+output "ex-list-op1" {
+    value = "Hello ${var.ex-list[3]}"
+}
 
 # From the above list, you can see that data in list can be of any type indivudually. 
 output "ex-list-op" {

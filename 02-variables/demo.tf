@@ -19,7 +19,7 @@ variable "intro-person" {
 }
 
 output "introduction-op" {
-    #value = "My name is ${var.introduction}" ${var.intro-person}
+    value = "My name is ${var.introduction}"
 }
 
 output "introduction-op1" {
