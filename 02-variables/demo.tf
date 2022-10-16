@@ -11,11 +11,20 @@ output "sample-op2" {
 }
 
 variable "introduction" {
-    name = "Nimmi"
+    default = {
+        "Nimmi"
+        "Westford"
+        26
+    }
+    
 }
 
 output "introduction-op" {
     value = "My name is ${var.introduction}"
+}
+
+output "introduction-op1" {
+    value = "My name is  ${var.introduction[0]} and living in  ${var.introduction[1] and house number is  ${var.introduction[2]}}"
 }
 
 
