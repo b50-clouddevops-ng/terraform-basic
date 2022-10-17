@@ -2,10 +2,10 @@ provider "aws" {
     region      = "us-east-1"
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "demo" {
   ami           = "ami-0427dccbe06f9c360"
   instance_type = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.web-sg.id]
+  vpc_security_group_ids = [aws_security_group.demo-sg.id]
 
   tags = {
     Name = "EC2 instance t2micro"
