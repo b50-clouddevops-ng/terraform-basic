@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "demo" {
   ami           = "ami-0427dccbe06f9c360"
   instance_type = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.demo-sg.id]
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
     Name = "EC2 instance t2micro"
@@ -13,7 +13,7 @@ resource "aws_instance" "demo" {
 }
 
 output "public_ip" {
-    value = aws_instance.web.public_ip
+    value = aws_instance.demo.public_ip
 }
 
 #Create a security group
