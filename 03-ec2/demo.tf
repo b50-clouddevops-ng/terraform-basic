@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_security_group" "web-sg" {
-  name = "${random_pet.name.id}-sg"
+  name = "ssh-sg"
   ingress {
     from_port   = 80
     to_port     = 80
