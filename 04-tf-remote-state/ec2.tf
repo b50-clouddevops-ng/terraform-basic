@@ -8,7 +8,7 @@ resource "aws_instance" "demo" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
-    Name = "EC2 instance t2micro"
+    Name = "EC2 instance tf remote state"
   }
 }
 
