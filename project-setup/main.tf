@@ -5,5 +5,5 @@ module "frontend" {
 }
 
 output frontend_op {
-    value = module.frontend.public_ip
+    value = module.frontend.sg_id
 }

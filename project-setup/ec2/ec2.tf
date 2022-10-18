@@ -8,6 +8,10 @@ resource "aws_spot_instance_request" "spot_worker" {
     Name = "var.COMPONENT"
   }
 
+  output "spot_public_ip" {
+    value = aws_spot_instance_request.spot_worker.public_ip
+  }
+
 /*   provisioner "remote-exec" {
   
   # Connection Provisioner
