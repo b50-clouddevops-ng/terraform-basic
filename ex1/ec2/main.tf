@@ -1,3 +1,4 @@
+
 resource "aws_instance" "demo" {
   ami                    = "ami-0427dccbe06f9c360"
   instance_type          = "t2.micro"
@@ -6,10 +7,11 @@ resource "aws_instance" "demo" {
   tags = {
     Name = "EC2 instance tf remote state"
   }
-}
 
-output "public_ip" {
+
+  output "public_ip" {
     value = aws_instance.demo.public_ip
+   }
 }
 
 variable sg {}
