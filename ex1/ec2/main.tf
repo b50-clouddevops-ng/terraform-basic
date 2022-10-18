@@ -8,10 +8,11 @@ resource "aws_instance" "demo" {
     Name = "EC2 instance tf remote state"
   }
 
+}
 
   output "public_ip" {
     value = "aws_instance.demo.public_ip"
    }
-}
+
 
 variable sg {}
