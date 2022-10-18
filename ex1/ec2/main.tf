@@ -7,7 +7,6 @@ resource "aws_instance" "demo" {
   tags = {
     Name = "EC2 instance tf remote state"
   }
-
 }
 
   output "public_ip" {
