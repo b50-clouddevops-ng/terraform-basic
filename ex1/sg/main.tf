@@ -17,6 +17,9 @@ resource "aws_security_group" "allow_ssh" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-output "sg_id" {
-    value = aws_security_group.allow_ssh.id
 }
+
+output "sg_id" {
+    value      = "aws_security_group.allow_ssh.id"
+}
+
