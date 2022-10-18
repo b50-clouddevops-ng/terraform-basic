@@ -15,4 +15,4 @@ resource "aws_instance" "demo" {
    }
 
 
-variable sg {}
+variable "sg" {}
