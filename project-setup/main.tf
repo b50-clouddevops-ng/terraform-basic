@@ -1,5 +1,7 @@
 module "ec2" {
     source       = "./ec2"
+     APP_VERSION  = "0.0.2"
+
 }
 
 
