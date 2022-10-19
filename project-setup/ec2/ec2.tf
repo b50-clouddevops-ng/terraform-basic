@@ -5,7 +5,7 @@ resource "aws_spot_instance_request" "spot_worker" {
   vpc_security_group_ids = [aws_security_group.allow_ssh1.id]
 
   tags = {
-    Name = "vars.COMPONENT"
+    Name = "var.COMPONENT"
   }
 }
 
