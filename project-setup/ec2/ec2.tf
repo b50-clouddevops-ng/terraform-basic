@@ -15,7 +15,7 @@ resource "aws_instance" "demo" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
-    Name = vars.COMPONENT
+    Name = var.COMPONENT
   }
 }
 
