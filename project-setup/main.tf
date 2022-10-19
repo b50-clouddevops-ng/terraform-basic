@@ -7,5 +7,5 @@ module "frontend" {
 
 
 output "public_op" {
-    value = module.ec2.aws_op
+    value = module.frontend.aws_op
 }
