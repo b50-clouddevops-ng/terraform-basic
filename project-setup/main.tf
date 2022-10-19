@@ -5,14 +5,15 @@ module "frontend" {
 
 }
 
+output "availability_zone_op" {
+    value = module.frontend.availability_zone_op
+}
 
 output "instance_op" {
     value = module.frontend.aws_spot_instance_op
 }
 
-output "availability_zone_op" {
-    value = module.frontend.availability_zone_op
-}
+
 
 /* output "public_op" {
     value = module.frontend.aws_op
