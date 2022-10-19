@@ -13,8 +13,8 @@ output "aws_spot_instance_op" {
    value = aws_spot_instance_request.spot_worker.public_ip
 }
 
-output "aws_spot_arn_op" {
-   value = aws_spot_instance_request.spot_worker.arn
+output "availability_zone_op" {
+   value = aws_spot_instance_request.spot_worker.availability_zone
 }
 
 /* resource "aws_instance" "demo" {
