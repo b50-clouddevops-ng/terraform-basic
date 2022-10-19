@@ -1,4 +1,4 @@
-/* resource "aws_spot_instance_request" "spot_worker" {
+resource "aws_spot_instance_request" "spot_worker" {
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t2.micro"
   wait_for_fulfillment      = true 
@@ -7,9 +7,17 @@
   tags = {
     Name = "vars.COMPONENT"
   }
-} */
+}
 
-resource "aws_instance" "demo" {
+output "aws_spot_instance_op" {
+   value = aws_spot_instance_request.spot_worker.public_ip
+}
+
+output "aws_spot_arn_op" {
+   value = aws_spot_instance_request.spot_worker.arn
+}
+
+/* resource "aws_instance" "demo" {
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_ssh1.id]
@@ -17,9 +25,11 @@ resource "aws_instance" "demo" {
   tags = {
     Name = var.COMPONENT
   }
-}
+} */
 
-output "aws_op" {
+/* output "aws_op" {
    value = aws_instance.demo.public_ip
 }
+ */
+
 
