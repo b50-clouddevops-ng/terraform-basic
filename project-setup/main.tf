@@ -11,6 +11,7 @@ output "availability_zone_op" {
 
 output "instance_op" {
     value = module.frontend.aws_spot_instance_op
+    description = "Public ip for the fronend module"
 }
 
 
