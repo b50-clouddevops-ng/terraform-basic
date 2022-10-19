@@ -2,7 +2,7 @@
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t2.micro"
   wait_for_fulfillment      = true 
-  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
+  vpc_security_group_ids = [aws_security_group.allow_ssh1.id]
 
   tags = {
     Name = "vars.COMPONENT"
