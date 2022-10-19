@@ -3,7 +3,11 @@ module "ec2" {
     sg = module.sg.sg_id
 }
 
+module "sg" {
+    source   = "./sg"
+}
 
-output frontend_op {
-    value = module.ec2
+
+output "ec2_op" {
+    value = module.ec2.aws_op
 }
